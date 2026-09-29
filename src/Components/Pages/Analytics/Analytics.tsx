@@ -6,20 +6,12 @@ import NumChart from "./NumChart/NumChart";
 import OrderValueChart from "./DiscountDistributionChart/DiscountDistributionChart";
 import './Analytics.css';
 import TableAnalytics from "./TableAnalytics/TableAnalytics";
+import type { Order } from "./AnalyticsHeader/AnalyticsTypes";
 
 const Analytics = (() =>{
-    const [orderv, setorderv] = useState([]);
+    const [orderv, setorderv] = useState<Order[]>([]);
     const [Loading, setLoading] = useState(true);
     const [priceFilter, setPriceFilter] = useState("all");
-    useEffect (() =>{
-        OrderService()
-            .then((data) => {
-                setorderv(data);
-            })
-            .finally(() => {
-                setLoading(false);
-            });
-    },[])
     useEffect (() =>{
         OrderService()
             .then((data) => {
@@ -49,7 +41,7 @@ const Analytics = (() =>{
     const total = filterData.reduce((sum, order) => {
         return sum + order.discountedTotal;
     }, 0);
-    const avg = filterData.length > 0 ? total / orderv.length : 0;
+    const avg = filterData.length > 0 ? total / filterData.length : 0;
     
     return(
         <div className="analyticclass">

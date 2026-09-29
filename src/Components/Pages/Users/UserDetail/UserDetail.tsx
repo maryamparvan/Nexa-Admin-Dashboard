@@ -6,16 +6,48 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import Button from "../../../Button/Button";
 import { useNavigate } from "react-router-dom";
 
+type User = {
+    id: number;
+    image: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    gender: string;
+    age: number;
+    phone: string;
+    username: string;
+    birthDate: string;
+    bloodGroup: string;
+
+    address: {
+        address: string;
+        city: string;
+        state: string;
+        country: string;
+    };
+
+    company: {
+        name: string;
+        department: string;
+        title: string;
+        address: {
+            address: string;
+        };
+    };
+};
+
 const UserDetail = (() =>{
     const navigate = useNavigate();
-    const [users, setUser] = useState(null);
+    const [users, setUser] = useState<User | null>(null);
     const [Loading, setLoading] = useState(true);
     const { id } = useParams();
     useEffect(() => {
         setLoading(true);
         UserService()
             .then((data) => {
-                const foundUser = data.find( (useri) => useri.id === Number(id));
+                const foundUser = data.find(
+                    (useri: User) => useri.id === Number(id)
+                );
                 setUser(foundUser);
             })
             .finally(() => {

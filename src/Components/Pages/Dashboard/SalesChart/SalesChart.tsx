@@ -7,7 +7,7 @@ interface SalesChartProps {
 }
 
 const SalesChart = ({ properties }: SalesChartProps) => {
-    const priceData = properties.map((property, index) => ({
+    const priceData = properties.map((property) => ({
         property: property.title,
         price: property.price_usd
     }));

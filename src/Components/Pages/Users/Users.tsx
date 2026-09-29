@@ -4,9 +4,22 @@ import { useEffect, useState } from "react";
 import "./User.css"
 import { useNavigate } from "react-router-dom";
 
+type User = {
+    id: number;
+    image: string;
+    firstName: string;
+    lastName: string;
+    phone: string;
+    age: number;
+    gender: string;
+    email: string;
+    address: {
+        city: string;
+    };
+};
 
 const User = (() =>{
-    const [users, setUsers] = useState([]);
+    const [users, setUsers] = useState<User[]>([]);
     const [gender, setgender] = useState("all");
     const [searchu, setsearchu] = useState("");
     const [Loading, setLoading] = useState(true);

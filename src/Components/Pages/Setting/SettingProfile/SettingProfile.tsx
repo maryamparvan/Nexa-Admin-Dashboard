@@ -12,7 +12,7 @@ const SettingProfile = (() =>{
     const [passwordconf, setpasswordconf] = useState("");
     const [message, setMessage] = useState("");
     const [messageType, setMessageType] = useState("");
-    const [userdata, setuserdata] = useState(JSON.parse( localStorage.getItem("currentUser")));
+    const [userdata, setuserdata] = useState(JSON.parse( localStorage.getItem("currentUser")|| "null"));
 
     const saveChange = () => {
         const pasUser = JSON.parse(

@@ -6,7 +6,7 @@ import { FiClock } from "react-icons/fi";
 
 type prop = {
     totalId :number
-    Revenue: number,
+    Revenue: string,
     AvgOrder:string, 
     Pending: number
 }

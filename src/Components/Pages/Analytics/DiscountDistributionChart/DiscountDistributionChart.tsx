@@ -1,14 +1,6 @@
 import "./DiscountDistributionChart.css"
 import {PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend} from "recharts";
-  
-type Product = {
-  discountPercentage: number;
-};
-
-type Order = {
-  id: number;
-  products: Product[];
-};
+import type { Order } from "../AnalyticsHeader/AnalyticsTypes";
 
 type Props = {
   orders: Order[];

@@ -1,19 +1,6 @@
 import "./TableAnalytics.css";
+import type { Order,Product  } from "../AnalyticsHeader/AnalyticsTypes";
 
-type Product = {
-  discountPercentage: number;
-  quantity: number;
-};
-
-type Order = {
-  id: number;
-  userId: number;
-  total: number;
-  discountedTotal: number;
-  totalProducts: number;
-  totalQuantity: number;
-  products: Product[];
-};
 type Props = {
   orders: Order[];
 };

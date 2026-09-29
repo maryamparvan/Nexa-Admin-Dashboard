@@ -4,8 +4,16 @@ import { IoMdSearch } from "react-icons/io";
 import "./Order.css";
 import OrderStats from "./OrderStats/OrderStats";
 
+type Order = {
+    id: number;
+    userId: number;
+    totalProducts: number;
+    totalQuantity: number;
+    discountedTotal: number;
+};
+
 const Order = (() =>{
-    const [orderv, setorderv] = useState([]);
+    const [orderv, setorderv] = useState<Order[]>([]);
     const [Loading, setLoading] = useState(true);
     const [priceFilter, setPriceFilter] = useState("all");
     const [searchu, setsearchu] = useState("");
@@ -54,7 +62,7 @@ const Order = (() =>{
                 </div>
                 <select className="selectUser" onChange={(e) => setPriceFilter(e.target.value)} value={priceFilter}>
                     <option value="all">All Orders</option>
-                    <option value="Under$100">Under $100</option>
+                    <option value="Under100">Under $100</option>
                     <option value="$100-$500">$100 - $500</option>
                     <option value="$500-$1000">$500 - $1000</option>
                     <option value="over$1000">Over $1000</option>

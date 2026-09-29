@@ -1,7 +1,7 @@
 import './AnalyticsHeader.css';
 
 type Props = {
-    Revenue: number;
+    Revenue: string;
     orders: number;
     avgOrder: string;
     customers: number;

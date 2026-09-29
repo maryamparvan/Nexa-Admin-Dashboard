@@ -1,0 +1,35 @@
+.light {
+    --background: rgb(228, 241, 253);
+    --backnav: white;
+    --text: #1e293b;
+    --textinwhitebox: #1e293b;
+    --textnav: #3f434e;
+    --textuserhead: rgb(34, 41, 72);
+    --smalltext: #64748b;
+    --notfback: rgb(250, 253, 255);
+    --hovenotif:#e2e8f1;
+    --makeasreadhover : #4f46e5;
+    --makeasread:  #6366f1;
+    --colorsvg:  #000004;
+
+}
+
+.dark {
+    --background: #a0b4ab;
+    --backnav: #526b66;
+    --text: #1e293b;
+    --textnav: #e9f9f4;
+    --textinwhitebox: #1e293b;
+    --textuserhead: rgb(6, 32, 16);
+    --notfback: #f4fff8;
+    --hovenotif:#e1ebe8;
+    --makeasreadhover : #147555;
+    --makeasread:  #4e947e;
+    --colorsvg:  #ffffff;
+}
+
+.appDiv {
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--text);
+}

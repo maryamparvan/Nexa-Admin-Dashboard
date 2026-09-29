@@ -1,0 +1,88 @@
+.sidebar {
+    min-height: 100vh;
+    padding: 24px 16px;
+    background-color: var(--backnav);
+    border-right: 1px solid var(--border);
+    box-sizing: border-box;
+    transition:
+        width 0.25s ease,
+        padding 0.25s ease,
+        transform 0.25s ease;
+}
+.sidebar.out {
+    width: 240px;
+}
+.sidebar.in {
+    width: 240px;
+}
+.sidebar.in.in {
+    width: 75px;
+    padding: 24px 10px;
+}
+.ulDiv {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ulDiv li {
+    margin-bottom: 6px;
+}
+.ulDiv li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 11px 14px;
+    border-radius: 10px;
+    color: var(--textnav);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+.ulDiv li a svg {
+    min-width: 20px;
+    font-size: 18px;
+}
+.ulDiv li a:hover {
+    background-color: var(--card);
+    color: var(--text);
+}
+.sidebar.in.in .ulDiv li a {
+    justify-content: center;
+    padding: 12px 8px;
+}
+
+.sidebar.in.in .ulDiv li a span {
+    display: none;
+}
+@media(max-width:650px){
+    .sidebar.out {
+        width: 65px;
+        padding: 15px 8px;
+    }
+    .sidebar.in {
+        width: 65px;
+        padding: 15px 8px;
+    }
+    .sidebar.in.in {
+        width: 65px;
+        padding: 15px 8px;
+    }
+    .ulDiv li {
+        margin-bottom: 8px;
+    }
+    .ulDiv li a {
+        justify-content: center;
+        padding: 11px 5px;
+    }
+    .ulDiv li a span {
+        display: none;
+    }
+    .ulDiv li a svg {
+        min-width: 18px;
+        font-size: 18px;
+    }
+}

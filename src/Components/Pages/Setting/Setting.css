@@ -1,0 +1,190 @@
+.settinging {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+.bodySetting {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 760px);
+    gap: 36px;
+    margin-top: 24px;
+    align-items: start;
+    width: 100%;
+    min-width: 0;
+}
+.bodySetting > div {
+    min-width: 0;
+}
+.ulsetting {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.ulsetting li {
+    display: flex;
+}
+.ulbutton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 42px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--smalltext);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.ulbutton svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #94a3b8;
+    transition: color 0.2s ease;
+}
+.ulbutton:hover {
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+.ulbutton:hover svg {
+    color: #475569;
+}
+.ulbutton.active {
+    background-color: #ede9fe; 
+    color: #6366f1;
+    font-weight: 600;
+}
+.ulbutton.active svg {
+    color: #6366f1;
+}
+.bodySetting > div:last-child {
+    min-width: 0;
+}
+.notifications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.notifications-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 0;
+}
+.notifications-subtitle {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 4px;
+}
+.btn-mark-all {
+    background: transparent;
+    border: none;
+    color: #6366f1;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+.btn-mark-all:hover {
+    background-color: #f5f3ff;
+}
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.notification-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.notification-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+.notification-card.unread {
+    background-color: #fdfdfe;
+    border-color: #e0e7ff;
+}
+.notification-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.notification-title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.notification-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+.notification-desc {
+    font-size: 13px;
+    color: #475569;
+    margin: 0;
+}
+.notification-time {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+.unread-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #6366f1;
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+
+@media (max-width: 650px) {
+    .settinging {
+        width: 100%;
+        min-width: 0;
+    }
+    .settinging h3 {
+        font-size: 18px;
+    }
+    .bodySetting {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        min-width: 0;
+    }
+    .bodySetting > div {
+        width: 100%;
+        min-width: 0;
+    }
+    .ulsetting {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2px;
+        width: 100%;
+    }
+    .ulsetting li {
+        min-width: 0;
+    }
+    .ulbutton {
+        min-width: 0;
+        width: 100%;
+    }
+}

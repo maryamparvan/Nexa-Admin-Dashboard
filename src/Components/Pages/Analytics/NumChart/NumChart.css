@@ -1,0 +1,37 @@
+.revenueChart {
+    width: 100%;
+    min-width: 0;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.revenueChartHeader {
+    width: 100%;
+    min-width: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.chartContainer {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+@media (max-width: 650px) {
+    .revenueChart {
+        width: 100%;
+        min-width: 0;
+    }
+    .revenueChartHeader {
+        padding: 15px;
+    }
+    .revenueChartHeader h3 {
+        font-size: 17px;
+    }
+    .revenueChartHeader p {
+        font-size: 12px;
+    }
+    .chartContainer {
+        width: 100%;
+        min-width: 0;
+    }
+}

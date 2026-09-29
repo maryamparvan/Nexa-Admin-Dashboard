@@ -1,0 +1,110 @@
+.tableAnalytics {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    border: 1px solid #e2e8f0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    color: var(--textinwhitebox);
+}
+
+.tableAnalyticsHeader {
+    margin-bottom: 20px;
+}
+
+.tableAnalyticsHeader h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tableAnalyticsHeader p {
+    margin: 6px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.tableWrapper {
+    width: 100%;
+    max-height: 400px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.tablediv {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    background-color: white;
+    color: var(--textinwhitebox);
+}
+
+.tablediv thead {
+    background-color: #e2e8f0;
+}
+
+.tablediv th {
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.tablediv td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.tablediv tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.tablediv tbody tr:hover {
+    background-color: #f8fafc;
+    cursor: pointer;
+}
+
+
+@media (max-width: 650px) {
+
+    .tableAnalytics {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .tableAnalyticsHeader {
+        margin-bottom: 14px;
+    }
+
+    .tableAnalyticsHeader h3 {
+        font-size: 16px;
+    }
+
+    .tableAnalyticsHeader p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .tableWrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tablediv {
+        min-width: 650px;
+    }
+
+    .tablediv th {
+        padding: 10px 12px;
+        font-size: 11px;
+    }
+
+    .tablediv td {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,57 @@
+.orderValueChart {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.orderValueChartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  min-width: 0;
+}
+.orderValueChartHeader h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.orderValueChartHeader p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+.chartContainer {
+  width: 100%;
+  height: 350px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 650px) {
+  .orderValueChart {
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+    margin-top: 12px;
+  }
+  .orderValueChartHeader {
+    margin-bottom: 12px;
+}
+  .orderValueChartHeader h3 {
+    font-size: 16px;
+}
+  .orderValueChartHeader p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .chartContainer {
+    width: 100%;
+    height: 300px;
+    min-width: 0;
+  }
+}

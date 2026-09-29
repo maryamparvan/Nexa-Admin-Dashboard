@@ -1,0 +1,112 @@
+.notificationProfile {
+    width: 100%;
+}
+
+.notificationProfileHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.notificationProfileHeader h2 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.notificationProfileHeader p {
+    margin: 0;
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.notificationProfileHeader button {
+    border: none;
+    background: transparent;
+    color: #6366f1;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.notificationProfileHeader button:hover {
+    color: #4f46e5;
+}
+
+.notificationProfileList {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.notificationProfileItem {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    border-bottom: 1px solid #f1f5f9;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.notificationProfileItem:last-child {
+    border-bottom: none;
+}
+
+.notificationProfileItem:hover {
+    background-color: var(--notfback);
+}
+
+.notificationProfileItem.unread {
+    background-color: var(--backnav);
+}
+
+.notificationProfileItem.read {
+    background-color: white;
+}
+
+.notificationContent {
+    flex: 1;
+}
+
+.notificationContent h3 {
+    margin: 0 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.notificationContent p {
+    margin: 0 0 8px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #64748b;
+}
+
+.notificationContent small {
+    font-size: 11px;
+    color: #94a3b8;
+}
+.unreadDot {
+    width: 8px;
+    height: 8px;
+    margin-top: 5px;
+    margin-left: 15px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #6366f1;
+}
+.emptyNotification {
+    padding: 50px 20px;
+    text-align: center;
+    color: #94a3b8;
+}
+.emptyNotification p {
+    margin: 0;
+    font-size: 14px;
+}

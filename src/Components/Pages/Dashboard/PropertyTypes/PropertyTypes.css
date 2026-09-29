@@ -1,0 +1,27 @@
+.divTypeProduct {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.divTypeProduct h3,h4{
+    color: var(--textinwhitebox);
+}
+.divTypeProduct svg {
+    font-size: 22px;
+}
+
+.divTypeProduct span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--textinwhitebox);
+}
+
+.divTypeProduct hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #e2e8f0;
+}
+.numhouse{
+    display: flex;
+    gap: 10px;
+}

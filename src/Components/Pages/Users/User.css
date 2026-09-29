@@ -1,0 +1,105 @@
+.searchUser{
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+}
+.searchUser input{
+    border: none;
+    width: 100%;
+    outline: none;
+}
+.selectUser{
+    border: 1px solid #e2e8f0;
+    background-color: white;
+    padding: 9px;
+    border-radius: 8px;
+}
+.headUser {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+.tableUser{
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+}
+.tableContainer{
+    max-height: 800px;
+    overflow-y: auto;
+    color: var(--textinwhitebox);
+}
+.tableContainer h4{
+    color: var(--textuserhead);
+}
+.tableUser thead {
+    background-color: #e2e8f0;
+}
+.tableUser thead th {
+    padding: 10px;
+}
+.tbodyClass td{
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+}
+.tableUser tbody tr:hover {
+    background-color: #f8fafc;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.useruser {
+    width: 100%;
+    min-width: 0;
+}
+
+@media(max-width:650px){
+    .useruser h2 {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .headUser {
+        width: 100%;
+        gap: 10px;
+        padding-bottom: 18px;
+    }
+    .searchUser {
+        width: 100%;
+        max-width: 220px;
+        height: 38px;
+    }
+    .selectUser {
+        height: 38px;
+        padding: 0 8px;
+        font-size: 13px;
+    }
+    .tableContainer {
+        width: 100%;
+        border-radius: 12px;
+        overflow-x: auto;
+    }
+    .tableUser {
+        min-width: 700px;
+    }
+    .tableContainer h4 {
+        padding: 15px 15px 10px;
+        font-size: 14px;
+    }
+    .tableUser thead th {
+        padding: 9px 10px;
+        font-size: 11px;
+    }
+    .tbodyClass td {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+    .tbodyClass img {
+        width: 34px;
+        height: 34px;
+    }
+}

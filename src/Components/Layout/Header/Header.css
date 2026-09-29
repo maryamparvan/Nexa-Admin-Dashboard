@@ -1,0 +1,245 @@
+.divHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.divRightHeader{
+    display: flex;
+    gap: 25px;
+    padding-right: 15px;
+}
+.ButtonClass{
+    padding-top: 10px;
+    height: 30px;
+    background-color:transparent;
+    border: none;
+}
+.ButtonClass svg{
+    color: var( --colorsvg);
+} 
+.searchDiv input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.profileInfo{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color:transparent;
+    color: var(--text);
+}
+.divRightHeader svg{
+    font-size: 25px;
+}
+.divUser{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+}
+.searchDiv{
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: white;
+}
+.userMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+.avatar img{
+    width: 40px;
+    height: 40px;
+}
+.notificationWrapper {
+    position: relative;
+}
+
+.notificationBadge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ef4444;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    border: 2px solid white;
+}
+.notificationPanel {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    width: 360px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+    overflow: hidden;
+    z-index: 1000;
+}
+.notificationHeader {
+    height: 55px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.notificationHeader h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.notificationHeader button {
+    border: none;
+    background: transparent;
+    color:var(--makeasread);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.notificationHeader button:hover {
+    color: var(--makeasreadhover);
+}
+.notificationList {
+    max-height: 380px;
+    overflow-y: auto;
+}
+.notificationItem {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f1f5f9;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.notificationItem:hover {
+    background-color: var(--hovenotif);
+}
+.notificationItem.unread {
+    background-color: var(--notfback);
+}
+.notificationItem.unread:hover {
+    background-color: var(--hovenotif);
+}
+.notificationItem h4 {
+    margin: 0 0 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1e293b;
+}
+.notificationItem p {
+    margin: 0 0 7px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #64748b;
+}
+.notificationItem small {
+    font-size: 10px;
+    color: #94a3b8;
+}
+.noNotifications {
+    margin: 0;
+    padding: 35px 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+@media (max-width: 500px) {
+    .divHeader {
+        margin: 10px;
+        padding-top: 10px;
+    }
+    .divHeader h1 {
+        font-size: 18px;
+    }
+    .divRightHeader {
+        gap: 10px;
+        padding-right: 0;
+        align-items: center;
+    }
+    .ButtonClass {
+        padding-top: 5px;
+    }
+    .divUser {
+        gap: 7px;
+    }
+    .avatar img {
+        width: 30px;
+        height: 30px;
+    }
+    .profileInfo {
+        font-size: 12px;
+    }
+    .profileInfo small {
+        font-size: 9px;
+    }
+    .notificationPanel {
+        position: fixed;
+        top: 55px;
+        left: 15px;
+        right: 15px;
+        width: auto;
+        max-width: none;
+        max-height: calc(100vh - 75px);
+        border-radius: 12px;
+    }
+    .notificationList {
+        max-height: calc(100vh - 135px);
+        overflow-y: auto;
+    }
+    .notificationHeader {
+        height: 50px;
+        padding: 0 14px;
+    }
+    .notificationHeader h3 {
+        font-size: 14px;
+    }
+    .notificationHeader button {
+        font-size: 11px;
+    }
+    .notificationItem {
+        padding: 12px 14px;
+    }
+    .notificationItem h4 {
+        font-size: 12px;
+    }
+    .notificationItem p {
+        font-size: 11px;
+    }
+    .notificationItem small {
+        font-size: 9px;
+    }
+    .divUser {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 12px;
+        position: relative;
+    }
+}

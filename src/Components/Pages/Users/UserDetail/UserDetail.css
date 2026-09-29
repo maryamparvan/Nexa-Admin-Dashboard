@@ -1,0 +1,185 @@
+.userDetailimage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.back{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--textuserhead);
+}
+.backimg{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+.idDivclass{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.midBoxs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.midBoxs .infoBox {
+    display: flex;
+    gap: 0px;
+    padding: 24px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+.infoBox{
+    display: flex;
+    flex-direction: column;
+    min-height:250px ;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+.classBoxs{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.endBoxid{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.class{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: var(--textinwhitebox);
+}
+.class h3,h2{
+    color: var(--textuserhead);
+}
+.endBoxflex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.endBoxflexDiv{
+    padding: 0;
+}
+
+.userDetailimage {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+.accountItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.accountItem span {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.accountItem strong {
+    font-size: 15px;
+    font-weight: 500;
+    color: #0f172a;
+}
+
+.buttonBack{
+    border: none;
+    background-color: transparent;
+    color: var(--textuserhead);
+}
+.userMainInfo {
+    min-width: 0;
+}
+.userMainInfo h3,
+.userMainInfo h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+@media (max-width: 650px) {
+    .class {
+        gap: 20px;
+    }
+    .back {
+        gap: 6px;
+    }
+    .back h3 {
+        font-size: 15px;
+    }
+    .backimg {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 18px;
+    }
+    .userDetailimage {
+        width: 70px;
+        height: 70px;
+    }
+    .userMainInfo {
+        width: 100%;
+    }
+    .userMainInfo h3 {
+        font-size: 18px;
+    }
+    .userMainInfo h4 {
+        font-size: 13px;
+    }
+    .idDivclass {
+        gap: 12px;
+    }
+    .idDivclass h4 {
+        margin: 0;
+    }
+    .midBoxs {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .infoBox {
+        min-height: auto;
+        padding: 18px;
+    }
+    .infoBox h2 {
+        font-size: 18px;
+    }
+    .infoBox p {
+        font-size: 13px;
+    }
+    .endBoxid {
+        padding: 18px;
+        gap: 18px;
+    }
+    .endBoxid h2 {
+        font-size: 18px;
+    }
+    .endBoxflex {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .accountItem span {
+        font-size: 12px;
+    }
+    .accountItem strong {
+        font-size: 14px;
+    }
+}

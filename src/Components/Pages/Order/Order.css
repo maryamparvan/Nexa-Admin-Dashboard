@@ -1,0 +1,45 @@
+.tableUser{
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+}
+.tableContainer{
+    max-height: 800px;
+    overflow-y: auto;
+}
+.tableUser thead {
+    background-color: #e2e8f0;
+}
+.tableUser thead th {
+    padding: 20px;
+}
+.tbodyClass td{
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+.tableUser tbody tr:hover {
+    background-color: #f8fafc;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.searchUser{
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+}
+.searchUser input{
+    border: none;
+    width: 100%;
+    outline: none;
+}
+.selectUser{
+    border: 1px solid #e2e8f0;
+    background-color: white;
+    padding: 9px;
+    border-radius: 8px;
+}

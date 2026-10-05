@@ -1,7 +1,7 @@
 import { IoMdSearch } from "react-icons/io";
 import UserService from "../../../Service/UserService/UserService";
 import { useEffect, useState } from "react";
-import "./User.css"
+import './User.css';
 import { useNavigate } from "react-router-dom";
 
 type User = {

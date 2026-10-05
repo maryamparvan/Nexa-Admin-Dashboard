@@ -1,6 +1,12 @@
 import { BrowserRouter, Route, Routes  } from 'react-router-dom'
 import './App.css'
 import './Components/Pages/Login/Login.css';
+import './Components/Pages/Analytics/Analytics.css'
+import './Components/Pages/Dashboard/Dashboard.css'
+import './Components/Pages/Order/Order.css'
+import './Components/Pages/Product/Product.css'
+import './Components/Pages/Setting/Setting.css'
+import './Components/Pages/Users/User.css';
 import Layout from './Components/Layout/Layout'
 import Dashboard from './Components/Pages/Dashboard/Dashboard'
 import Product from './Components/Pages/Product/Product'

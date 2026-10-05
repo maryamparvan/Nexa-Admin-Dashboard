@@ -63,7 +63,7 @@ const [loadingUsers, setLoadingUsers] = useState(true);
                     <p>Welcome back 👋</p>
                     <p> Sign in to access your dashboard</p>
                 </div>
-                <div className="classdiv">
+                <div className="classdivv">
                     <label >Email :</label>
                     <input type="email" value={email}  onChange={(e) => setemail(e.target.value) } />
                 </div>

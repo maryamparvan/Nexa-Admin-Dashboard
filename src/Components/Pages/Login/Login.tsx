@@ -46,9 +46,9 @@ const [loadingUsers, setLoadingUsers] = useState(true);
         }
       };
       const demo = () => {
-        const demoUser = data.find((user) => user.email === "emilys.johnson@x.dummyjson.com");
+        const demoUser = data[1];
         if (!demoUser) {
-            setload("Demo account is unavailable");
+            setload("Please wait, loading demo account...");
             return;
         }
         localStorage.setItem("currentUser", JSON.stringify(demoUser));

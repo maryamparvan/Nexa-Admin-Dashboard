@@ -34,7 +34,7 @@
     justify-content: center;
     border: none;
     border-radius: 8px; 
-    background-color:white;
+    background-color:var(--button);
     font-size: 14px; 
     font-weight: 600;
     cursor: pointer; 
@@ -55,7 +55,7 @@
     justify-content: center;
     border: none;
     border-radius: 8px; 
-    background-color:white;
+    background-color: var(--button)
     font-size: 14px; 
     font-weight: 600;
     cursor: pointer; 

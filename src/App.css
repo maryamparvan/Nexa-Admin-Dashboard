@@ -12,6 +12,7 @@
     --makeasread:  #6366f1;
     --colorsvg:  #000004;
     --border: #e2e8f0;
+    --button :#4f46e5;
 }
 
 .dark {
@@ -27,6 +28,7 @@
     --makeasread:  #4e947e;
     --colorsvg:  #ffffff;
     --border:#e2e8f0;
+    --button :#white;
 }
 
 .appDiv {

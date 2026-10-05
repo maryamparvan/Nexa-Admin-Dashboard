@@ -14,13 +14,21 @@ const Login = (() =>{
     const [email, setemail] = useState<string>("")
     const [pass, setpass] = useState<string>("")
     const [data, setdata] = useState<typedata[]>([])
-    const [load, setload] = useState<string>()
+    const [load, setload] = useState<string>();
+const [loadingUsers, setLoadingUsers] = useState(true);
     const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
     useEffect(() => {
         const fetchdata = async () => {
-            const datau = await UserService();
-            setdata(datau);
+            try {
+                const datau = await UserService();
+                setdata(datau);
+            } catch (error) {
+                console.error("Failed to load users:", error);
+                setload("Unable to connect to login service");
+            } finally {
+                setLoadingUsers(false);
+            }
         };
         fetchdata();
     }, []);
@@ -37,14 +45,16 @@ const Login = (() =>{
             setload("Email or password is incorrect");
         }
       };
-      const demo =()=>{
-        const demoUser = data[1];
-        if (demoUser) {
-          localStorage.setItem("currentUser", JSON.stringify(demoUser));
-          window.dispatchEvent(new Event("currentUserChanged"));
-          navigate("/Dashboard");
+      const demo = () => {
+        const demoUser = data.find((user) => user.email === "emilys.johnson@x.dummyjson.com");
+        if (!demoUser) {
+            setload("Demo account is unavailable");
+            return;
         }
-      }
+        localStorage.setItem("currentUser", JSON.stringify(demoUser));
+        window.dispatchEvent(new Event("currentUserChanged"));
+        navigate("/Dashboard");
+    };
     return(
         <div className="loginPage">
             <div className="divlog">
@@ -68,7 +78,9 @@ const Login = (() =>{
                 <div className="buttonslog">
                     <span>{load}</span>
                     <Button className="buttonsign" fun={login}>Sign in</Button>
-                    <Button className="buttondemo" fun={demo}>Try Demo Account</Button>
+                    <Button className="buttondemo" fun={demo} >
+                        {loadingUsers ? "Loading..." : "Try Demo Account"}
+                    </Button>
                 </div>
             </div>
         </div>

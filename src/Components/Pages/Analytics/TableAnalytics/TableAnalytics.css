@@ -1,4 +1,4 @@
-/* .tableAnalytics {
+.tableAnalytics {
     width: 100%;
     min-width: 0;
     box-sizing: border-box;
@@ -7,12 +7,6 @@
     padding: 20px;
     border-radius: 12px;
     color: var(--textinwhitebox);
-} */
-.tableAnalytics {
-    outline: 10px solid red !important;
-    background-color: yellow !important;
-    display: block !important;
-    width: 100% !important;
 }
 .tableAnalyticsHeader {
     margin-bottom: 20px;

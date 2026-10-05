@@ -33,3 +33,14 @@
     background-color: var(--background);
     color: var(--text);
 }
+body {
+    background-color: red !important;
+}
+
+input {
+    border: 5px solid blue !important;
+}
+
+table {
+    border: 5px solid green !important;
+}

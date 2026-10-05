@@ -68,7 +68,9 @@
     cursor: pointer;
 }
 
-
+.tableAnalytics {
+    outline: 5px solid red !important;
+}
 @media (max-width: 650px) {
 
     .tableAnalytics {

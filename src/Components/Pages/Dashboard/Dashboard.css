@@ -33,8 +33,9 @@
 @media(max-width : 650px){
     .divClass {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 8px;
-        font-size: 15px;
+        font-size: 12px;
     }
     .bodypage {
         grid-template-columns: 1fr;

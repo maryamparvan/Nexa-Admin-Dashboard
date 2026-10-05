@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import UserService from "../../../Service/UserService/UserService";
 import { IoEyeOutline, IoEyeOffOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
-import "./Login.css?test";
+import "./Login.css";
 
 type typedata = {
     password: string;

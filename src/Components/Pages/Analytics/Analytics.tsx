@@ -12,15 +12,19 @@ const Analytics = (() =>{
     const [orderv, setorderv] = useState<Order[]>([]);
     const [Loading, setLoading] = useState(true);
     const [priceFilter, setPriceFilter] = useState("all");
-    useEffect (() =>{
+    useEffect(() => {
         OrderService()
             .then((data) => {
+                console.log("ORDERS FROM API:", data);
                 setorderv(data);
+            })
+            .catch((error) => {
+                console.error("ORDER API ERROR:", error);
             })
             .finally(() => {
                 setLoading(false);
             });
-    },[])
+    }, []);
     const filterData = orderv.filter((order) => {
         const priceMatch = priceFilter === "all" || (priceFilter === "under100" &&
                 order.discountedTotal < 100) ||

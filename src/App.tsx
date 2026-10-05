@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes  } from 'react-router-dom'
 import './App.css'
+import './Components/Pages/Login/Login.css'
 import Layout from './Components/Layout/Layout'
 import Dashboard from './Components/Pages/Dashboard/Dashboard'
 import Product from './Components/Pages/Product/Product'

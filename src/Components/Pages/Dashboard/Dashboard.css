@@ -32,8 +32,8 @@
 }
 @media(max-width : 650px){
     .divClass {
-        grid-template-columns: 1fr;
-        gap: 12px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
     .bodypage {
         grid-template-columns: 1fr;

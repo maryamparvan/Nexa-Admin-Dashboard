@@ -34,3 +34,13 @@
     background-color: var(--background);
     color: var(--text);
 }
+
+.loginPage {
+    background: lime !important;
+}
+
+.divlog {
+    background: red !important;
+    width: 700px !important;
+    min-height: 500px !important;
+}

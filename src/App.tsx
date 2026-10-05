@@ -15,6 +15,7 @@ import './Components/Pages/Order/OrderStats/OrderStats.css';
 import './Components/Pages/Setting/Appearance/Appearance.css'
 import './Components/Pages/Setting/Notification/NotificationProfile.css'
 import './Components/Pages/Setting/SettingProfile/SettingProfile.css'
+import './Components/Pages/Analytics/TableAnalytics/TableAnalytics.css';
 import Layout from './Components/Layout/Layout'
 import Dashboard from './Components/Pages/Dashboard/Dashboard'
 import Product from './Components/Pages/Product/Product'

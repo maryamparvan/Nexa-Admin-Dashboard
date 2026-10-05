@@ -7,7 +7,7 @@ padding: 40px 20px;
 box-sizing: border-box;
 }
 
-/* .divlog {
+.divlog {
 width: 100%;
 max-width: 500px;
 box-sizing: border-box;
@@ -19,7 +19,7 @@ background-color: var(--backnav);
 border: 1px solid rgb(240, 240, 240);
 border-radius: 16px;
 box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-} */
+}
 .divlog h3 {
 margin: 0;
 color: var(--text);
@@ -173,15 +173,6 @@ min-height: 18px;
 color: #dc2626;
 font-size: 13px;
 text-align: center;
-}
-.loginPage {
-  background: lime !important;
-}
-
-.divlog {
-  background: red !important;
-  width: 700px !important;
-  min-height: 500px !important;
 }
   @media (max-width: 550px) {
   

@@ -32,6 +32,15 @@
     align-items: center;
     margin-left: auto;
     justify-content: center;
+    border: none;
+    border-radius: 8px; 
+    background-color:white;
+    font-size: 14px; 
+    font-weight: 600;
+    cursor: pointer; 
+    transition: 
+      background-color 0.2s ease, 
+      transform 0.15s ease;
 }
 .buttons {
     display: flex;
@@ -44,6 +53,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+    border-radius: 8px; 
+    background-color:white;
+    font-size: 14px; 
+    font-weight: 600;
+    cursor: pointer; 
+    transition: 
+      background-color 0.2s ease, 
+      transform 0.15s ease;
 } 
 .profile hr {
     margin: 35px 0;
@@ -59,6 +77,7 @@
 .success{
     color: green;
 }
+
 @media(max-width:650px){
     .buttonSsave{
         width: 140px;

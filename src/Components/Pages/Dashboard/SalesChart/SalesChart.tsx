@@ -30,7 +30,7 @@ const SalesChart = ({ properties }: SalesChartProps) => {
             <ResponsiveContainer width="100%" height={300}>
                 <LineChart data={priceData} margin={{ left: 40, right: 10, top: 10, bottom: 10 }}>
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="property" interval={0} tick={{ fontSize:11 }} angle={-20} textAnchor="end"  height={90}/>
+                    <XAxis dataKey="property" interval={0} tick={{ fontSize:5 }} angle={-20} textAnchor="end"  height={90}/>
                     <YAxis />
                     <Tooltip />
                     <Line type="monotone" dataKey="price" stroke="#0f172a" strokeWidth={2}  />

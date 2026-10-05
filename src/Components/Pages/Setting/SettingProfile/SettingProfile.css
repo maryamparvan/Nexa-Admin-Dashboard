@@ -33,6 +33,7 @@
     margin-left: auto;
     justify-content: center;
     border: none;
+    color: var(--backnav);
     border-radius: 8px; 
     background-color:var(--button);
     font-size: 14px; 
@@ -55,7 +56,8 @@
     justify-content: center;
     border: none;
     border-radius: 8px; 
-    background-color: var(--button)
+    background-color: var(--button);
+    color: var(--backnav);
     font-size: 14px; 
     font-weight: 600;
     cursor: pointer; 

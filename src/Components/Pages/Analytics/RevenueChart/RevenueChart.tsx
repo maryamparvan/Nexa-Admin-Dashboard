@@ -26,8 +26,8 @@ const RevenueChart = ({ orders }: Props) => {
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={chartData}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
+            <XAxis dataKey="name" tick={{ fontSize: 5 }} />
+            <YAxis tick={{ fontSize: 5 }} />
             <Tooltip formatter={(value) => [`$${value}`, "Revenue"]}/>
             <Bar dataKey="revenue" name="Revenue" radius={[6, 6, 0, 0]} fill="#4F46E5"/>
           </BarChart>
